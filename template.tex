@@ -1,0 +1,75 @@
+%Préambule du document :
+\documentclass[11pt]{report}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage[francais]{babel}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{hhline}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pdfpages}
+\usepackage{array}
+
+
+\titleformat{\chapter}{\normalfont\huge}{}{20pt}{\huge \bfseries}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=blue
+}
+
+%\renewcommand{\chaptername}{}
+\renewcommand{\thechapter}{}
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{}
+
+\title{Rapport de stage}
+\author{Tristan Dewalle \\ ENIB}
+\date{Du 24/06/2015\\Au 04/09/2015}
+
+%Corps du document :
+\begin{document}
+    \maketitle
+		\tableofcontents
+		
+    \chapter{chap}
+		\section{sect}
+			\subsection{sub}
+			\begin{itemize}
+			\end{itemize}
+			
+			\begin{enumerate}
+			\end{enumerate}
+			
+						\begin{center} \begin{minipage}{\textwidth}
+						\renewcommand{\footnoterule}{}
+						\footnotetext[1]{laurem}
+						\begin{tabular}{|l|l|l| || r|r|c|}
+							\hline
+							\multicolumn{6}{|c|}{tab}\\
+							\hline
+							 \\ \hline
+							 \footnotemark[1]\\ \cline{3-3}
+							 \multirow{6}{*}{F 1} 
+							 \multicolumn{2}{|c||}{Changement de châssis}& \multicolumn{2}{c|}{Rehausser les pièces pour le pivot}\\
+
+						\end{tabular}
+						\end{minipage} \end{center}
+
+							
+						\url{perdu.com}\\
+						
+						
+						
+					
+			\appendix
+			\chapter{documents annexes, premiere div}
+			\includepdf[pages={1}]{rep/doc}
+			
+\end{document}
